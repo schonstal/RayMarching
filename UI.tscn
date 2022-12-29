@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://6n8uieojgnj7"]
+
+[ext_resource type="Shader" path="res://raymarch.gdshader" id="1_a53u2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f3i4t"]
+shader = ExtResource("1_a53u2")
+shader_parameter/max_steps = null
+shader_parameter/hit_distance = null
+shader_parameter/draw_distance = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6rnce"]
+shader = ExtResource("1_a53u2")
+shader_parameter/max_steps = null
+shader_parameter/hit_distance = null
+shader_parameter/draw_distance = null
+
+[node name="Control" type="Control"]
+material = SubResource("ShaderMaterial_f3i4t")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -371.0
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_6rnce")
+layout_mode = 0
+offset_right = 677.0
+offset_bottom = 640.0
